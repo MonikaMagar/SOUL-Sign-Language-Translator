@@ -1,0 +1,149 @@
+/* Page Wrapper */
+.about-page {
+  background-color: #000;
+  min-height: 100vh;
+  padding: 50px 0;
+}
+
+/* Main Titles */
+.about-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ebcfcf;
+  margin-bottom: 10px;
+}
+
+.about-subtitle {
+  font-size: 1.5rem;
+  color: #aca5a5;
+  font-weight: 500;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+/* Section Headers */
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #7641bc;
+  margin: 30px 0 15px;
+  text-align: center;
+}
+
+/* Paragraph Text */
+.about-text {
+  font-size: 1.25rem;        /* Increased for readability */
+  color: #d1cccc;            /* Slightly lighter contrast */
+  line-height: 1.8;          /* More breathing room */
+  max-width: 750px;          /* Wider for desktop */
+  margin: 20px auto;         /* Vertical spacing + centered */
+  padding: 0 20px;           /* Horizontal padding */
+  text-align: justify;
+}
+
+/* Feature List */
+.about-list {
+  list-style: none;
+  padding: 0;
+  font-size: 1.2rem;
+  color: #d1cccc;
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 1.7;
+}
+
+.about-list li {
+  padding: 10px 0;
+  font-weight: 500;
+}
+
+/* Image Styling */
+.about-image {
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.about-image:hover {
+  transform: scale(1.05);
+}
+
+/* Button */
+.join-btn {
+  background-color: #7641bc;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+
+.join-btn:hover {
+  background-color: #5a3097;
+  transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+
+/* Tablets & Small Desktops */
+@media (max-width: 992px) {
+  .about-text,
+  .about-list {
+    padding: 0 15px;
+  }
+}
+
+/* Medium Mobiles (≤600px) */
+@media (max-width: 600px) {
+  .about-title {
+    font-size: 2rem;
+  }
+  .about-subtitle {
+    font-size: 1rem;
+  }
+  .section-title {
+    font-size: 1.5rem;
+  }
+  .about-text {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  .about-list {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .join-btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
+/* Small Mobiles (≤425px) */
+@media (max-width: 425px) {
+  .about-title {
+    font-size: 1.8rem;
+  }
+  .section-title {
+    font-size: 1.4rem;
+  }
+  .about-text {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    padding: 0 10px;
+  }
+  .about-list {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+  .join-btn {
+    font-size: 0.9rem;
+    padding: 8px 18px;
+  }
+}

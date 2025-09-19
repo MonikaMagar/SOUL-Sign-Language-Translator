@@ -1,0 +1,85 @@
+/* Background Styling */
+.how-it-works {
+  background-color: #000;
+    min-height: 100vh;
+    padding-top: 20px;
+    text-align: center;
+  }
+  
+  /* Title & Subtitle */
+  .title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #efcece;
+  }
+  
+  .subtitle {
+    font-size: 1.4rem;
+    color: #aca5a5;
+    margin-bottom: 40px;
+  }
+  
+  /* Steps Section */
+  .steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .step {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .step-image {
+    max-width: 80%;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .step-image:hover {
+    transform: scale(1.05);
+  }
+  
+  .step-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+  
+  .step-description {
+    font-size: 1.2rem;
+    color: #444;
+  }
+  
+
+.step-card {
+  height: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  overflow: hidden;
+}
+
+.step-card:hover {
+  transform: scale(1.02);
+}
+
+.step-image {
+  display: block;
+  width: 200%;       /* Ensure it stretches full width of the card */
+  height: 250px;     /* Fixed height */
+  object-fit: cover; /* Crop image to fill area */
+  margin: 0 auto;    /* Center horizontally if needed */
+}
+
+
+.step-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.step-description {
+  font-size: 1rem;
+  color: #555;
+}

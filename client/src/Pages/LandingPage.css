@@ -1,0 +1,274 @@
+/* Background gradient */
+.landing-page {
+    /* background: linear-gradient(to right, #fde68a, #f9a8d4); */
+    background-color: #000;
+    min-height: 100vh;
+    padding-top: 20px;
+  }
+  
+  /* Centering the logo images */
+  .letter-images {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .letter-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .letter-images img {
+    max-height: 150px;
+    transform: rotate(-20deg); /* Slight tilt */
+  
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Adjust individual images for the diagonal layout */
+  .letter-images img:nth-child(1) {
+    transform: rotate(-20deg) translateY(15px);
+  }
+  
+  .letter-images img:nth-child(2) {
+    transform: rotate(-15deg) translateY(-20px);
+  }
+  
+  .letter-images img:nth-child(3) {
+    transform: rotate(15deg) translateY(-20px);
+  }
+  
+  .letter-images img:nth-child(4) {
+    transform: rotate(31deg) translateY(10px);
+    
+  }
+  
+  .letter-images img:hover {
+    transform: scale(1.05);
+  }
+  
+
+  
+  
+  /* Text styling */
+  .landing-title {
+    font-size: 2.7rem;
+    font-weight: bolder;
+    color: #f3efef;
+    margin-bottom: 15px;
+  }
+  
+  .landing-subtitle {
+    font-size: 1.5rem;
+     color: #f3efef;
+    font-weight: bold;
+  }
+  
+  /* Get Started button */
+  .get-started-btn {
+    background-color: #7641bc;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 15px 15px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .get-started-btn:hover {
+    background-color: #782fcb;
+  }
+  
+  /* Image styling */
+  .image-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+  }
+  
+  .image-section img {
+    max-width: 70%;
+    margin-top: -30%;
+  
+  }
+  
+
+
+
+
+
+  @media (max-width: 992px) {
+    .landing-title {
+      font-size: 2rem;
+    }
+    
+    .landing-subtitle {
+      font-size: 1.3rem;
+    }
+  
+    .letter-images img {
+      max-height: 120px;
+    }
+  
+    .image-section img {
+      max-width: 80%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .landing-title {
+      font-size: 1.8rem;
+    }
+  
+    .landing-subtitle {
+      font-size: 1.2rem;
+    }
+  
+    .letter-images img {
+      max-height: 100px;
+    }
+  
+    .image-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .image-section img {
+      max-width: 90%;
+      margin-top: 0;
+    }
+  
+    .navbar-nav {
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .landing-title {
+      font-size: 1rem;
+    }
+  
+    .landing-subtitle {
+      font-size: 0.5rem;
+    }
+  
+    .get-started-btn {
+      font-size: 1rem;
+      padding: 8px 16px;
+    }
+  
+    .letter-images {
+      gap: 19px;
+    }
+  
+    .letter-images img {
+      max-height: 80px;
+    }
+  
+    .navbar-brand {
+      font-size: 1rem;
+    }
+    .image-col {
+    flex: 1 1 100%; /* Full width on small screens */
+  }
+
+
+
+  
+  }
+
+
+  
+
+
+
+
+
+
+
+  /* navbar  */
+
+
+  /* Navbar Styling */
+
+  
+  .navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #4b0082; /* Dark Purple */
+  }
+  
+  .navbar-brand:hover {
+    color: #3a0066;
+  }
+  
+/* Navbar Link Underline Animation */
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #4b0082;
+    margin-right: 15px;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* Underline Effect */
+  .navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 12px;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background-color: #6a0dad; /* Purple underline */
+    transition: width 0.3s ease-in-out;
+  }
+  
+  /* Expand underline on hover */
+  .navbar-nav .nav-link:hover::after {
+    width: 100%;
+  }
+  
+  /* Darken text color on hover */
+  .navbar-nav .nav-link:hover {
+    color: #3a0066;
+  }
+  
+  
+  .navbar-toggler {
+    border: none;
+    background: transparent;
+   
+  }
+  
+  .navbar-toggler:focus {
+    box-shadow: none;
+  }
+  
+  /* Button Styling */
+  .navbar .btn-primary {
+    background-color: #6a0dad; /* Purple */
+    border: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 8px 20px;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .navbar .btn-primary:hover {
+    background-color: #4b0082; /* Darker Purple */
+  }
+  
+  /* Navbar Logo */
+.navbar-logo {
+    height: 50px; /* Adjust as needed */
+    width: auto;
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+  

@@ -1,0 +1,248 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+
+
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h2, h3, h4 {
+    color: #4b5563;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    color: #1f2937;
+    font-weight: bold;
+  }
+  
+  button {
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  /* Button Styles */
+  .btn-purple {
+    background-color: #7641bc;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-purple:hover {
+    background-color: #5a31a5;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+  }
+  
+  input::placeholder {
+    font-style: italic;
+  }
+  
+  /* Layout Styles */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .col-md-6 {
+    width: 100%;
+    max-width: 48%;
+  }
+  
+  .col-lg-6 {
+    width: 100%;
+    max-width: 48%;
+  }
+  
+  .mb-4 {
+    margin-bottom: 20px;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    border: 2px solid black;
+    margin-bottom: 20px;
+  }
+  .signimg {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  .sign-image {
+    width: calc(33.333% - 10px);
+    height: 100px;
+    object-fit: contain;
+    border-radius: 8px;
+    border: 1px solid #888;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.5s ease-in;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .col-md-6 {
+      width: 100%;
+    }
+  
+    .btn-purple {
+      width: 100%;
+    }
+  
+    .sign-images-container {
+      justify-content: center;
+    }
+  
+    .form-control {
+      width: 100%;
+      font-size: 14px;
+    }
+  }
+  
+  /* For extremely small screens like 320px (very narrow devices) */
+  @media (max-width: 320px) {
+    /* Reduce padding for the container */
+    .container {
+      padding: 10px;
+    }
+  
+    /* Reduce font sizes for headings */
+    h2 {
+      font-size: 20px;
+    }
+  
+    h3, h4 {
+      font-size: 16px;
+    }
+  
+    /* Adjust buttons size and text for small screens */
+    .btn-purple {
+      padding: 6px;
+      font-size: 19px;
+    }
+  
+    .form-control {
+      font-size: 14px;
+    }
+  
+    /* Stack columns vertically */
+    .col-md-6, .col-lg-6 {
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    /* Adjust the image container size */
+    img {
+      width: 100%;
+      max-height: 250px;  /* Reduce max-height for better fitting */
+    }
+  
+    .sign-images-container {
+      justify-content: center;
+    }
+  
+    /* Ensure buttons are fully responsive and fit */
+    .btn-purple {
+      font-size: 14px;
+      width: 10%;  /* Ensure full-width buttons */
+    }
+
+
+    
+
+
+      .signimg {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: flex-start;
+      
+      }
+      
+      .sign-image {
+        width: calc(33.333% - 10px); 
+  height: 50px;
+  border-radius: 8px;
+  border: 1px solid #888;
+  object-fit: contain;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  animation: fadeIn 0.5s ease-in;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      }
+
+      .sign-image:hover {
+        transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      }
+
+      /* Fade-in animation */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+      
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      padding: 40px;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
