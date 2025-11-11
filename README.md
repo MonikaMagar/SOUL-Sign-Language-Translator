@@ -57,3 +57,7 @@ Or see a live demo: [Demo Link](#)
 ```bash
 git clone https://github.com/MonikaMagar/SOUL-Sign-Language-Translator.git
 cd FinalSOUL/Projectcode
+
+### run code command 
+ npm run dev
+ python app.py
